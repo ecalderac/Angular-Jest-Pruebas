@@ -26,22 +26,22 @@ describe('AppComponent', () => {
     expect(component.title).toEqual('angular-test');
   });
 
-  test('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const component = fixture.componentInstance;
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
+  // test('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const component = fixture.componentInstance;
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
 
-    const h1 = compiled.querySelector('h1');
-    expect(h1?.textContent).toContain( component.title );
-  });
+  //   const h1 = compiled.querySelector('h1');
+  //   expect(h1?.textContent).toContain( component.title );
+  // });
 
-  test('Debe hacer match con el snapshot', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const compiled = fixture.nativeElement as HTMLElement; 
-    fixture.detectChanges();
+  // test('Debe hacer match con el snapshot', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const compiled = fixture.nativeElement as HTMLElement; 
+  //   fixture.detectChanges();
 
-    expect( compiled ).toMatchSnapshot();
-  })
+  //   expect( compiled ).toMatchSnapshot();
+  // })
 
 });
